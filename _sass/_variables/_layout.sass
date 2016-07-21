@@ -1,0 +1,16 @@
+// Our variables
+$spacing-unit: 1em
+$content-width: 1200px
+$on-palm: 600px
+$on-laptop: 800px
+
+// Use media queries like this:
+// @include media-query($on-palm)
+//     .wrapper
+//         padding-right: $spacing-unit / 2
+//         padding-left: $spacing-unit / 2
+//
+//
+@mixin media-query($device)
+    @media screen and (max-width: $device)
+        @content
