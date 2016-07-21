@@ -4,4 +4,9 @@
   .wrapper
     padding: $spacing-unit
     .row
-      justify-content: space-between
+      justify-content: center
+      align-items: center
+      &:first-child
+        height: 5em
+    h1
+      @extend %title
