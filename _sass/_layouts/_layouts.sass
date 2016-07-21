@@ -6,7 +6,16 @@
   border-bottom-color: $reverse-text-color
   border-bottom-style: solid
 
-%colored-background-image
+@mixin colored-background-image($path)
+  position: relative
+  background-image: url($path)
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+@mixin colored-background-overlay($color)
+  background-color: $color
+  opacity: $background-opacity
   position: absolute
   content: " "
   top: 0

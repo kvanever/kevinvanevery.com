@@ -1,14 +1,8 @@
 .work
-  position: relative
-  background-image: url(/img/mgac-screenshot.png)
-  background-size: cover
-  background-repeat: no-repeat
-  background-position: center
+  @include colored-background-image("/img/mgac-screenshot.png")
   @extend %section-border
   &:before
-    @extend %colored-background-image
-    background-color: $blue
-    opacity: $background-opacity
+    @include colored-background-overlay($blue)
   .wrapper
     padding: $spacing-unit
     .row
