@@ -1,6 +1,14 @@
 .work
-  background-color: $blue
+  position: relative
+  background-image: url(/img/mgac-screenshot.png)
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
   @extend %section-border
+  &:before
+    @extend %colored-background-image
+    background-color: $blue
+    opacity: $background-opacity
   .wrapper
     padding: $spacing-unit
     .row
