@@ -1,8 +1,6 @@
 .work
-  @include colored-background-image("/img/mgac-screenshot.png")
+  @include colored-background-image-overlay($blue, "/img/mgac-screenshot.png")
   @extend %section-border
-  &:before
-    @include colored-background-overlay($blue)
   .wrapper
     padding: $spacing-unit
     .row
