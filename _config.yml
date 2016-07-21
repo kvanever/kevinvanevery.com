@@ -16,4 +16,4 @@ github_username:  kvanever
 
 # Build settings
 markdown: kramdown
-exclude: [node_modules, gulpfile.js]
+exclude: [node_modules, gulpfile.js, README.md]
