@@ -1,5 +1,6 @@
 .intro
   background-color: $purple
+  @extend %section-border
   .wrapper
     padding: $spacing-unit
     .row
@@ -8,7 +9,7 @@
     font-size: $title-font-size
     font-weight: $title-font-weight
     line-height: $title-line-height
-    color: white
+    color: $reverse-text-color
 
 .intro-title
   @extend %title
