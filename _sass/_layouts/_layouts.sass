@@ -14,9 +14,9 @@
   background-position: center
   z-index: -2
 
-@mixin colored-background-overlay($color)
+@mixin colored-background-overlay($color, $opacity)
   background-color: $color
-  opacity: $background-opacity
+  opacity: $opacity
   position: absolute
   content: " "
   top: 0
@@ -25,7 +25,7 @@
   height: 100%
   z-index: -1
 
-@mixin colored-background-image-overlay($color, $path)
-  @include colored-background-image($path)
+@mixin colored-background-image-overlay($color, $path, $opacity)
+  @include colored-background-image($path, $opacity)
   &:before
     @include colored-background-overlay($blue)

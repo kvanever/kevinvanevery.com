@@ -1,15 +1,14 @@
 .work
-  @include colored-background-image-overlay($blue, "/img/mgac-screenshot.png")
+  background-color: $blue
   @extend %section-border
+  a:hover
+    color: $red
   .row
     padding: $spacing-unit
     &:first-child
-      height: 10em
-      justify-content: center
       align-items: center
     &:nth-child(2)
       flex-direction: column
-      background-color: $light
       opacity: 0.9
   ul
     display: flex
